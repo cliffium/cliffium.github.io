@@ -924,3 +924,47 @@ body{
   }
   .skill-card .skill-logo{width:26px;height:26px}
 }
+
+
+/* v4.1 — demo links and logo sizing fixes */
+.project-actions .btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+}
+.btn-primary{
+  background:var(--blue-700);
+  color:#fff;
+  border-color:var(--blue-700);
+}
+.btn-primary:hover{
+  background:var(--blue-900);
+  border-color:var(--blue-900);
+}
+.aws-logo{
+  color:#232f3e;
+  overflow:visible;
+}
+.aws-logo text{fill:currentColor}
+
+/* These source images contain more internal whitespace than the ECPay asset. */
+.company-logo-aeolus{
+  height:44px;
+  max-width:180px;
+  transform:scale(1.28);
+  transform-origin:right center;
+}
+.company-logo-telexpress{
+  height:42px;
+  max-width:180px;
+  transform:scale(1.24);
+  transform-origin:right center;
+}
+
+@media(max-width:720px){
+  .company-logo-aeolus,
+  .company-logo-telexpress{
+    transform-origin:left center;
+  }
+}
