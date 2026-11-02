@@ -971,6 +971,17 @@ body{
 
 
 /* v5 — language switcher */
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.resume-download{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:46px;max-width:100%;text-decoration:none;
+  color:var(--blue-900);background:var(--surface-strong);border-color:var(--border-strong);
+  box-shadow:0 4px 14px rgba(23,39,61,.05);
+}
+.resume-download svg{width:20px;height:20px;flex:none}
+.resume-download:hover{background:var(--blue-50);border-color:var(--blue-500);transform:translateY(-1px)}
+.resume-download:focus-visible{outline:3px solid var(--blue-500);outline-offset:4px}
+
 .header-actions{
   display:flex;
   align-items:center;
@@ -1027,3 +1038,4 @@ main,footer{
     font-size:13px;
   }
 }
+

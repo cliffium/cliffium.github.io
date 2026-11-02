@@ -207,6 +207,7 @@ if (coreApproach) {
 
 const translations = {
   en: {
+    "下載 PDF":"Download PDF",
     "Domains":"Domains","Skills":"Skills","Projects":"Projects","Experience":"Experience","Evolution":"Evolution",
     "從 Infrastructure、Software Engineering 到 Systems Analysis，累積超過 10 年企業 IT 與系統開發經驗。":"More than 10 years of experience spanning IT Infrastructure, Software Engineering, and Systems Analysis.",
     "專注於將實際業務需求轉換為可落地、可維護、可持續演進的技術方案。":"Focused on turning real business requirements into practical, maintainable, and evolvable technical solutions.",
@@ -281,6 +282,7 @@ const translations = {
     "Language":"Language","Education":"Education"
   },
   ja: {
+    "下載 PDF":"PDFをダウンロード",
     "Domains":"領域","Skills":"スキル","Projects":"プロジェクト","Experience":"経歴","Evolution":"キャリア",
     "從 Infrastructure、Software Engineering 到 Systems Analysis，累積超過 10 年企業 IT 與系統開發經驗。":"IT Infrastructure、Software Engineering、Systems Analysis を横断する10年以上の企業IT・システム開発経験があります。",
     "專注於將實際業務需求轉換為可落地、可維護、可持續演進的技術方案。":"実際の業務要件を、実装可能で保守しやすく、継続的に発展できる技術ソリューションへ変換することを得意としています。",
@@ -467,3 +469,4 @@ document.querySelectorAll(".lang-button").forEach(button => {
 
 const savedLanguage = localStorage.getItem("resume-language");
 applyLanguage(savedLanguage || "zh", false);
+
