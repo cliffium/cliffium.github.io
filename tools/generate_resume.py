@@ -10,12 +10,11 @@ import re
 
 from lxml import html
 from reportlab.lib import colors
-from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, KeepTogether
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'assets' / 'cliff-lin-resume.pdf'
