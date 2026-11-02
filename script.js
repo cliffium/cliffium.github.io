@@ -209,6 +209,7 @@ const translations = {
   en: {
     "Domains":"Domains","Skills":"Skills","Projects":"Projects","Experience":"Experience","Evolution":"Evolution",
     "從 Infrastructure、Software Engineering 到 Systems Analysis，累積超過 10 年企業 IT 與系統開發經驗。":"More than 10 years of experience spanning IT Infrastructure, Software Engineering, and Systems Analysis.",
+    "從 Infrastructure、Software Engineering 到 Systems Analysis，累積超過 10 年企業 IT 與系統開發經驗。 專注於將實際業務需求轉換為可落地、可維護、可持續演進的技術方案。":"More than 10 years of experience spanning IT Infrastructure, Software Engineering, and Systems Analysis. I focus on turning real business requirements into practical, maintainable, and evolvable technical solutions.",
     "專注於將實際業務需求轉換為可落地、可維護、可持續演進的技術方案。":"Focused on turning real business requirements into practical, maintainable, and evolvable technical solutions.",
     "跨越需求、應用與平台的完整系統視角":"A complete systems perspective across requirements, applications, and platforms",
     "擅長從使用者與業務需求出發，釐清真正需要解決的問題，再將需求轉換為 workflow、data model、API、 UI/UX、application architecture 與 deployment architecture。除了系統分析與架構設計，也具備實際的 軟體開發、系統整合、Cloud 與 Kubernetes 平台建置能力。":"I start from user and business needs, clarify the real problem, and translate it into workflows, data models, APIs, UI/UX, application architecture, and deployment architecture. Beyond systems analysis and architecture design, I also have hands-on experience in software development, system integration, cloud, and Kubernetes platform engineering.",
@@ -288,6 +289,7 @@ const translations = {
     "Implementation":"実装",
     "Production":"本番運用",
     "從 Infrastructure、Software Engineering 到 Systems Analysis，累積超過 10 年企業 IT 與系統開發經驗。":"IT Infrastructure、Software Engineering、Systems Analysis を横断する10年以上の企業IT・システム開発経験があります。",
+    "從 Infrastructure、Software Engineering 到 Systems Analysis，累積超過 10 年企業 IT 與系統開發經驗。 專注於將實際業務需求轉換為可落地、可維護、可持續演進的技術方案。":"IT Infrastructure、Software Engineering、Systems Analysis を横断する10年以上の企業IT・システム開発経験があります。実際の業務要件を、実装可能で保守しやすく、継続的に発展できる技術ソリューションへ変換することを得意としています。",
     "專注於將實際業務需求轉換為可落地、可維護、可持續演進的技術方案。":"実際の業務要件を、実装可能で保守しやすく、継続的に発展できる技術ソリューションへ変換することを得意としています。",
     "跨越需求、應用與平台的完整系統視角":"要件・アプリケーション・プラットフォームを横断するシステム視点",
     "擅長從使用者與業務需求出發，釐清真正需要解決的問題，再將需求轉換為 workflow、data model、API、 UI/UX、application architecture 與 deployment architecture。除了系統分析與架構設計，也具備實際的 軟體開發、系統整合、Cloud 與 Kubernetes 平台建置能力。":"ユーザーと業務の要件から本当に解決すべき課題を整理し、Workflow、Data Model、API、UI/UX、Application Architecture、Deployment Architecture へ落とし込みます。システム分析・設計だけでなく、ソフトウェア開発、システム連携、Cloud、Kubernetes 基盤構築まで実務で対応できます。",
