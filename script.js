@@ -157,3 +157,49 @@ document.querySelectorAll(".site-nav a").forEach(link => {
     if (target) setTimeout(() => target.focus?.({preventScroll:true}), 450);
   });
 });
+
+// v3 — portfolio-style reveal motion
+const revealTargets = [
+  ...document.querySelectorAll(".section-heading"),
+  ...document.querySelectorAll(".profile-section .lead"),
+  ...document.querySelectorAll(".skill-section"),
+  ...document.querySelectorAll(".supporting-group"),
+  ...document.querySelectorAll(".project-card"),
+  ...document.querySelectorAll(".experience-card"),
+  ...document.querySelectorAll(".language-list article"),
+  ...document.querySelectorAll(".education-card")
+];
+
+revealTargets.forEach((el, index) => {
+  el.classList.add("reveal-on-scroll");
+  if (el.matches(".project-card:nth-child(even), .experience-card:nth-child(even)")) {
+    el.classList.add("reveal-right");
+  } else if (el.matches(".project-card, .experience-card")) {
+    el.classList.add("reveal-left");
+  }
+  el.dataset.revealDelay = String((index % 4) + 1);
+});
+
+const revealObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-revealed");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: "0px 0px -7% 0px" });
+
+revealTargets.forEach(el => revealObserver.observe(el));
+
+const coreApproach = document.querySelector(".hero-principle");
+if (coreApproach) {
+  const coreObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-revealed");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.45 });
+  coreObserver.observe(coreApproach);
+}
