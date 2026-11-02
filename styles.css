@@ -633,10 +633,13 @@ body{
 }
 
 .domain-card.active,
-.domain-card.state-primary,
+.domain-card.state-primary{
+  transform:translateY(-3px) scale(1.012);
+}
+
 .skill-card.selected,
 .skill-card.state-primary{
-  transform:translateY(-3px) scale(1.012);
+  transform:translateY(-2px);
 }
 
 .domain-card.state-supporting,
