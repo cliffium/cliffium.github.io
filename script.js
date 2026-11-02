@@ -32,7 +32,7 @@ const mapping = {
   },
   software: {
     golang:"primary", csharp:"primary", sql:"primary", api:"primary", react:"primary",
-    sap:"supporting", auth:"primary", git:"primary", ai:"primary", casbin:"supporting"
+    sap:"supporting", auth:"primary", git:"primary", ai:"primary"
   },
   platform: {
     k8s:"primary", helm:"primary", aws:"primary", linux:"primary", hyperv:"primary",
@@ -45,52 +45,91 @@ const mapping = {
 
 const domainButtons = Array.from(document.querySelectorAll(".domain-card"));
 const skillCards = Array.from(document.querySelectorAll(".skill-card"));
+const descriptionWrap = document.getElementById("domain-description-wrap");
 const description = document.getElementById("domain-description");
 let activeDomain = null;
+let activeSkill = null;
 
-function clearSkillStates(){
-  skillCards.forEach(card => {
-    card.classList.remove("state-disabled","state-supporting","state-primary");
-  });
+function clearDomainStates() {
+  domainButtons.forEach(btn => btn.classList.remove("active","state-disabled","state-supporting","state-primary"));
 }
 
-function renderDomain(domain){
-  domainButtons.forEach(btn => btn.classList.toggle("active", btn.dataset.domain === domain));
+function clearSkillStates() {
+  skillCards.forEach(card => card.classList.remove("selected","state-disabled","state-supporting","state-primary"));
+}
 
-  if(!domain){
-    clearSkillStates();
-    description.innerHTML = '<span class="domain-description-label">SELECT A DOMAIN</span><p>點擊上方卡片後，這裡會顯示該領域的說明。</p>';
-  } else {
-    skillCards.forEach(card => {
-      card.classList.remove("state-supporting","state-primary");
-      card.classList.add("state-disabled");
-      const state = mapping[domain][card.dataset.skill];
-      if(state){
-        card.classList.remove("state-disabled");
-        card.classList.add(state === "primary" ? "state-primary" : "state-supporting");
-      }
-    });
-    const data = domainData[domain];
-    description.innerHTML = '<span class="domain-description-label">' + data.title.toUpperCase() + '</span><p>' + data.description + '</p>';
-  }
+function closeDescription() {
+  descriptionWrap.classList.remove("open");
+}
 
+function openDescription(domain) {
+  const data = domainData[domain];
+  description.innerHTML = "<p><strong>" + data.title + "</strong> — " + data.description + "</p>";
+  descriptionWrap.classList.add("open");
   description.classList.remove("animate");
   void description.offsetWidth;
   description.classList.add("animate");
 }
 
+function renderDomain(domain) {
+  activeSkill = null;
+  clearDomainStates();
+  clearSkillStates();
+
+  if (!domain) {
+    activeDomain = null;
+    closeDescription();
+    return;
+  }
+
+  activeDomain = domain;
+  domainButtons.forEach(btn => btn.classList.toggle("active", btn.dataset.domain === domain));
+  skillCards.forEach(card => {
+    const state = mapping[domain][card.dataset.skill];
+    card.classList.add(state === "primary" ? "state-primary" : state === "supporting" ? "state-supporting" : "state-disabled");
+  });
+  openDescription(domain);
+}
+
+function renderSkill(skill) {
+  activeDomain = null;
+  clearDomainStates();
+  clearSkillStates();
+  closeDescription();
+
+  if (!skill) {
+    activeSkill = null;
+    return;
+  }
+
+  activeSkill = skill;
+  const selected = skillCards.find(card => card.dataset.skill === skill);
+  if (selected) selected.classList.add("selected");
+
+  domainButtons.forEach(btn => {
+    const state = mapping[btn.dataset.domain][skill];
+    btn.classList.add(state === "primary" ? "state-primary" : state === "supporting" ? "state-supporting" : "state-disabled");
+  });
+}
+
 domainButtons.forEach(btn => {
   btn.addEventListener("click", () => {
     const next = btn.dataset.domain;
-    activeDomain = activeDomain === next ? null : next;
-    renderDomain(activeDomain);
+    renderDomain(activeDomain === next ? null : next);
+  });
+});
+
+skillCards.forEach(card => {
+  card.addEventListener("click", () => {
+    const next = card.dataset.skill;
+    renderSkill(activeSkill === next ? null : next);
   });
 });
 
 document.querySelectorAll(".toggle-detail").forEach(button => {
   button.addEventListener("click", () => {
     const target = document.getElementById(button.dataset.target);
-    if(!target) return;
+    if (!target) return;
     const open = target.classList.toggle("open");
     const label = button.textContent.replace(/[↓↑]/g,"").trim();
     button.textContent = label + (open ? " ↑" : " ↓");
@@ -98,10 +137,23 @@ document.querySelectorAll(".toggle-detail").forEach(button => {
   });
 });
 
+const timeline = document.getElementById("career-timeline");
+if (timeline) {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        timeline.classList.add("is-visible");
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.35 });
+  observer.observe(timeline);
+}
+
 document.querySelectorAll(".site-nav a").forEach(link => {
   link.addEventListener("click", () => {
     const id = link.getAttribute("href");
     const target = document.querySelector(id);
-    if(target) setTimeout(() => target.focus?.({preventScroll:true}), 450);
+    if (target) setTimeout(() => target.focus?.({preventScroll:true}), 450);
   });
 });

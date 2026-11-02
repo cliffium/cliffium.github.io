@@ -29,9 +29,8 @@
           <h1>Cliff Lin</h1>
           <p class="hero-role">Internal Systems · Software Engineering · Cloud & Platform</p>
           <p class="hero-copy">
-            從 Infrastructure、Software Engineering 到 Systems Analysis，
-            累積超過 10 年企業 IT 與系統開發經驗。專注於將實際業務需求轉換為
-            可落地、可維護、可持續演進的技術方案。
+            從 Infrastructure、Software Engineering 到 Systems Analysis，累積超過 10 年企業 IT 與系統開發經驗。
+            專注於將實際業務需求轉換為可落地、可維護、可持續演進的技術方案。
           </p>
         </div>
         <aside class="hero-principle" aria-label="Core approach">
@@ -51,25 +50,22 @@
           <h2>跨越需求、應用與平台的完整系統視角</h2>
         </div>
         <p class="lead">
-          擅長從使用者與業務需求出發，釐清真正需要解決的問題，再將需求轉換為
-          workflow、data model、API、UI/UX、application architecture 與 deployment architecture。
-          除了系統分析與架構設計，也具備實際的軟體開發、系統整合、Cloud 與 Kubernetes
-          平台建置能力，能持續參與 solution 從需求、設計、實作到部署與維運的完整生命週期。
+          擅長從使用者與業務需求出發，釐清真正需要解決的問題，再將需求轉換為 workflow、data model、API、
+          UI/UX、application architecture 與 deployment architecture。除了系統分析與架構設計，也具備實際的
+          軟體開發、系統整合、Cloud 與 Kubernetes 平台建置能力。
         </p>
         <p class="lead">
-          近年亦將 AI 納入實際工程流程：先建立 architecture、coding conventions、
-          shared modules 與 implementation constraints，再利用 AI 協助實作並進行 code structure
-          與 architecture review，讓 AI 成為工程流程中的執行工具，而不是取代系統設計與技術判斷。
+          近年亦將 AI 納入實際工程流程：先建立 architecture、coding conventions、shared modules 與
+          implementation constraints，再利用 AI 協助實作並進行 code structure 與 architecture review。
         </p>
       </div>
     </section>
 
-    <section id="domains" class="section section-tinted">
+    <section id="domains" class="section mapping-section">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading compact-heading">
           <p class="eyebrow">PROFESSIONAL DOMAINS</p>
           <h2>我能處理什麼類型的問題</h2>
-          <p>點選任一領域，查看說明並同步高亮下方相關技能。</p>
         </div>
 
         <div class="domain-grid" role="group" aria-label="Professional domains">
@@ -80,71 +76,109 @@
           <button class="domain-card" data-domain="infra" type="button">IT Infrastructure</button>
         </div>
 
-        <div id="domain-description" class="domain-description" aria-live="polite">
-          <span class="domain-description-label">SELECT A DOMAIN</span>
-          <p>點擊上方卡片後，這裡會顯示該領域的說明。</p>
+        <div id="domain-description-wrap" class="domain-description-wrap">
+          <div id="domain-description" class="domain-description" aria-live="polite"></div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section skills-section">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading compact-heading">
           <p class="eyebrow">TECHNICAL SKILLS</p>
-          <h2>把領域能力落實成可以使用的技術</h2>
-          <p class="legend">
-            <span><i class="legend-dot default"></i>Default</span>
-            <span><i class="legend-dot supporting"></i>Supporting</span>
-            <span><i class="legend-dot primary"></i>Primary</span>
-          </p>
+          <div class="skills-title-row">
+            <h2>技術能力</h2>
+            <p class="legend" aria-label="Highlight legend">
+              <span><i class="legend-dot default"></i>預設</span>
+              <span><i class="legend-dot supporting"></i>關聯</span>
+              <span><i class="legend-dot primary"></i>主要關聯</span>
+            </p>
+          </div>
         </div>
 
         <div class="skill-section">
           <h3>Backend &amp; Application</h3>
           <div class="skill-grid">
-            <article class="skill-card" data-skill="golang"><strong>Golang</strong><span>Gin · GORM</span></article>
-            <article class="skill-card" data-skill="csharp"><strong>C# / .NET</strong><span>MVC · WinForms · SignalR</span></article>
-            <article class="skill-card" data-skill="sql"><strong>SQL / RDBMS</strong><span>MS SQL · MariaDB · SAP HANA</span></article>
-            <article class="skill-card" data-skill="api"><strong>REST API / Integration</strong><span>System boundaries · data flow</span></article>
-            <article class="skill-card" data-skill="react"><strong>React / Next.js</strong><span>AI-assisted production delivery</span></article>
-            <article class="skill-card" data-skill="sap"><strong>SAP Business One</strong><span>Workflow · inventory · integration</span></article>
+            <button class="skill-card" data-skill="golang" type="button"><strong>Golang</strong><span>Gin · GORM</span></button>
+            <button class="skill-card" data-skill="csharp" type="button"><strong>C# / .NET</strong><span>MVC · WinForms · SignalR</span></button>
+            <button class="skill-card" data-skill="sql" type="button"><strong>SQL / RDBMS</strong><span>Schema · Query · Stored Procedure</span></button>
+            <button class="skill-card" data-skill="react" type="button"><strong>React / Next.js</strong><span>AI-assisted production delivery</span></button>
+          </div>
+        </div>
+
+        <div class="skill-section">
+          <h3>Integration &amp; Security</h3>
+          <div class="skill-grid">
+            <button class="skill-card" data-skill="api" type="button"><strong>REST API / Integration</strong><span>System boundaries · data flow</span></button>
+            <button class="skill-card" data-skill="sap" type="button"><strong>SAP Business One</strong><span>Workflow · inventory · integration</span></button>
+            <button class="skill-card" data-skill="auth" type="button"><strong>OAuth2 / JWT / SSO</strong><span>Azure AD · token flow</span></button>
           </div>
         </div>
 
         <div class="skill-section">
           <h3>Cloud &amp; Platform</h3>
           <div class="skill-grid">
-            <article class="skill-card" data-skill="k8s"><strong>Kubernetes</strong><span>3 control planes · 3 workers</span></article>
-            <article class="skill-card" data-skill="helm"><strong>Helm</strong><span>Reusable deployment patterns</span></article>
-            <article class="skill-card" data-skill="aws"><strong>AWS</strong><span>EC2 · S3 · MediaConvert · Amplify · CloudFront · Route53</span></article>
-            <article class="skill-card" data-skill="linux"><strong>Linux</strong><span>Server · runtime · Bash</span></article>
-            <article class="skill-card" data-skill="hyperv"><strong>Hyper-V</strong><span>Virtualization platform</span></article>
-            <article class="skill-card" data-skill="network"><strong>Networking &amp; Infrastructure</strong><span>HAProxy · Ingress · DNS · routing</span></article>
-          </div>
-        </div>
-
-        <div class="skill-section">
-          <h3>Security &amp; Integration</h3>
-          <div class="skill-grid">
-            <article class="skill-card" data-skill="auth"><strong>OAuth2 / JWT / SSO</strong><span>Azure AD · token flow</span></article>
-            <article class="skill-card" data-skill="casbin"><strong>Casbin</strong><span>Authorization foundation</span></article>
+            <button class="skill-card" data-skill="k8s" type="button"><strong>Kubernetes</strong><span>3 control planes · 3 workers</span></button>
+            <button class="skill-card" data-skill="helm" type="button"><strong>Helm</strong><span>Reusable deployment patterns</span></button>
+            <button class="skill-card" data-skill="aws" type="button"><strong>AWS</strong><span>EC2 · S3 · MediaConvert · Amplify</span></button>
+            <button class="skill-card" data-skill="linux" type="button"><strong>Linux</strong><span>Server · runtime · Bash</span></button>
+            <button class="skill-card" data-skill="hyperv" type="button"><strong>Hyper-V</strong><span>Virtualization platform</span></button>
+            <button class="skill-card" data-skill="network" type="button"><strong>Networking &amp; Infrastructure</strong><span>HAProxy · Ingress · DNS</span></button>
           </div>
         </div>
 
         <div class="skill-section">
           <h3>Engineering</h3>
           <div class="skill-grid">
-            <article class="skill-card" data-skill="git"><strong>Git</strong><span>Version control · team workflow</span></article>
-            <article class="skill-card" data-skill="ai"><strong>AI-assisted Engineering</strong><span>Architecture-guided implementation</span></article>
+            <button class="skill-card" data-skill="git" type="button"><strong>Git</strong><span>Version control · team workflow</span></button>
+            <button class="skill-card" data-skill="ai" type="button"><strong>AI-assisted Engineering</strong><span>Architecture-guided implementation</span></button>
           </div>
-          <p class="supporting-line">
-            Supporting technologies: JavaScript · jQuery · CSS · SCSS · Bootstrap · Windows Server · VMware · Veeam · Jenkins · SonarQube · Swagger/OpenAPI · Joget
-          </p>
+        </div>
+
+        <div class="supporting-tech-section">
+          <div class="supporting-tech-heading">
+            <h3>Supporting Technologies</h3>
+            <p>實務中使用過、用來支援主要能力的技術與工具。</p>
+          </div>
+
+          <div class="supporting-groups">
+            <article class="supporting-group">
+              <h4>Backend &amp; Data</h4>
+              <div class="supporting-card-grid">
+                <span class="support-card">Gin</span><span class="support-card">GORM</span><span class="support-card">Casbin</span>
+                <span class="support-card">MS SQL</span><span class="support-card">MariaDB / MySQL</span><span class="support-card">SAP HANA</span>
+              </div>
+            </article>
+
+            <article class="supporting-group">
+              <h4>Frontend &amp; .NET</h4>
+              <div class="supporting-card-grid">
+                <span class="support-card">JavaScript / jQuery</span><span class="support-card">CSS / SCSS</span><span class="support-card">Bootstrap</span>
+                <span class="support-card">ASP.NET MVC</span><span class="support-card">WinForms</span><span class="support-card">SignalR</span>
+              </div>
+            </article>
+
+            <article class="supporting-group">
+              <h4>Infrastructure &amp; Operations</h4>
+              <div class="supporting-card-grid">
+                <span class="support-card">Ingress</span><span class="support-card">HAProxy</span><span class="support-card">NFS</span>
+                <span class="support-card">Veeam</span><span class="support-card">Windows Server</span><span class="support-card">VMware</span><span class="support-card">Bash</span>
+              </div>
+            </article>
+
+            <article class="supporting-group">
+              <h4>Engineering &amp; Enterprise</h4>
+              <div class="supporting-card-grid">
+                <span class="support-card">Jenkins</span><span class="support-card">SonarQube</span><span class="support-card">Swagger / OpenAPI</span>
+                <span class="support-card">Joget</span><span class="support-card">Java</span><span class="support-card">Qt</span><span class="support-card">Matlab</span>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section section-tinted">
+    <section id="projects" class="section section-soft">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">SELECTED PROJECTS</p>
@@ -156,9 +190,7 @@
             <div class="project-visual workflow-visual" aria-hidden="true">
               <div class="ui-shell">
                 <div class="ui-top"></div>
-                <div class="ui-columns">
-                  <span></span><span></span><span></span>
-                </div>
+                <div class="ui-columns"><span></span><span></span><span></span></div>
                 <div class="ui-chart"></div>
               </div>
             </div>
@@ -166,9 +198,6 @@
               <p class="project-type">PROFESSIONAL PROJECT</p>
               <h3>Internal Workflow System</h3>
               <p>以 React / Next.js 建立的內部 Web System，整合使用者權限、SAP 表單申請、庫存查詢與視覺化，以及簽核流程。</p>
-              <div class="impact-list">
-                <span>Solution ownership</span><span>SAP workflow automation</span><span>AI-assisted frontend</span>
-              </div>
               <div class="tag-row"><span>React</span><span>Golang</span><span>SAP B1</span><span>Kubernetes</span></div>
               <div class="project-actions">
                 <button class="btn btn-disabled" type="button" disabled>Demo 準備中</button>
@@ -188,17 +217,13 @@
             <div class="project-visual mes-visual" aria-hidden="true">
               <div class="factory-grid">
                 <span class="machine m1"></span><span class="machine m2"></span><span class="machine m3"></span>
-                <span class="flow f1"></span><span class="flow f2"></span>
-                <span class="database"></span>
+                <span class="flow f1"></span><span class="flow f2"></span><span class="database"></span>
               </div>
             </div>
             <div class="project-content">
               <p class="project-type">PROFESSIONAL PROJECT</p>
               <h3>Manufacturing MES / Shopfloor System</h3>
               <p>將製造現場的生產流程、測試資料、生產履歷與工單資訊系統化整合，並定義跨工具共用的資料介面。</p>
-              <div class="impact-list">
-                <span>Manufacturing analysis</span><span>Unified API</span><span>Production history</span>
-              </div>
               <div class="tag-row"><span>REST API</span><span>SQL</span><span>C# / .NET</span><span>Joget</span></div>
               <div class="project-actions">
                 <button class="btn btn-disabled" type="button" disabled>Demo 準備中</button>
@@ -224,9 +249,6 @@
               <p class="project-type">PROFESSIONAL PROJECT</p>
               <h3>AWS Multimedia Streaming Platform</h3>
               <p>依業務展示需求建立可持續維護的多媒體平台，將內容更新流程與 application code 解耦。</p>
-              <div class="impact-list">
-                <span>Cloud architecture</span><span>Streaming pipeline</span><span>Maintainable content model</span>
-              </div>
               <div class="tag-row"><span>MediaConvert</span><span>S3</span><span>Amplify</span><span>CloudFront</span><span>Route53</span></div>
               <div class="project-actions">
                 <button class="btn btn-text toggle-detail" type="button" data-target="project-aws">View Details ↓</button>
@@ -244,19 +266,14 @@
           <article class="project-card reverse">
             <div class="project-visual travel-visual" aria-hidden="true">
               <div class="travel-board">
-                <span class="day-pill">DAY 03</span>
-                <div class="route-line"></div>
-                <span class="stop s1"></span><span class="stop s2"></span><span class="stop s3"></span>
-                <div class="travel-card"></div>
+                <span class="day-pill">DAY 03</span><div class="route-line"></div>
+                <span class="stop s1"></span><span class="stop s2"></span><span class="stop s3"></span><div class="travel-card"></div>
               </div>
             </div>
             <div class="project-content">
               <p class="project-type personal">PERSONAL PROJECT</p>
               <h3>Travel Planning Web Application</h3>
               <p>把真實旅行中的模糊需求，透過 Systems Analysis、Information Architecture、UI/UX 與 AI-assisted Engineering 轉換為實際可使用的行程 Web App。</p>
-              <div class="impact-list">
-                <span>Real-world requirement</span><span>Mobile-first UX</span><span>AI-assisted delivery</span>
-              </div>
               <div class="tag-row"><span>Information Architecture</span><span>UX</span><span>AI Collaboration</span></div>
               <div class="project-actions">
                 <button class="btn btn-disabled" type="button" disabled>Demo 準備中</button>
@@ -274,18 +291,13 @@
 
           <article class="project-card">
             <div class="project-visual subtitle-visual" aria-hidden="true">
-              <div class="waveform">
-                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-              </div>
+              <div class="waveform"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
               <div class="subtitle-lines"><span>日本語 ASR</span><span>繁體中文 Translation</span></div>
             </div>
             <div class="project-content">
               <p class="project-type research">PERSONAL R&amp;D · IN PROGRESS</p>
               <h3>VTuber Automatic Subtitle &amp; Translation System</h3>
               <p>研究將長時間日文 VTuber 影片自動轉換為日文／繁中雙語字幕的 AI pipeline，重點放在可重現評估與架構取捨。</p>
-              <div class="impact-list">
-                <span>ASR evaluation</span><span>Cross-video validation</span><span>Model trade-offs</span>
-              </div>
               <div class="tag-row"><span>Python</span><span>Whisper</span><span>Local LLM</span><span>CUDA</span></div>
               <div class="project-actions">
                 <button class="btn btn-text toggle-detail" type="button" data-target="project-vtuber">Research Details ↓</button>
@@ -308,7 +320,6 @@
         <div class="section-heading">
           <p class="eyebrow">PROFESSIONAL EXPERIENCE</p>
           <h2>從維運、開發、分析到完整 Solution Ownership</h2>
-          <p>先看摘要；需要時再展開細節。</p>
         </div>
 
         <div class="experience-list">
@@ -411,13 +422,13 @@
       </div>
     </section>
 
-    <section id="evolution" class="section section-tinted">
+    <section id="evolution" class="section section-soft">
       <div class="container">
         <div class="section-heading">
           <p class="eyebrow">CAREER EVOLUTION</p>
           <h2>能力不是切換，而是一路累積</h2>
         </div>
-        <div class="timeline">
+        <div class="timeline" id="career-timeline">
           <article><span class="timeline-year">2015</span><i></i><h3>IT Infrastructure</h3><p>MIS Engineer</p></article>
           <article><span class="timeline-year">2017</span><i></i><h3>Software Engineering</h3><p>Software Engineer</p></article>
           <article><span class="timeline-year">2020</span><i></i><h3>Systems Analysis</h3><p>Manufacturing &amp; Enterprise Systems</p></article>
@@ -434,9 +445,9 @@
             <h2>Language</h2>
           </div>
           <div class="language-list">
-            <article><span class="language-icon">中</span><div><h3>Chinese</h3><p>Native</p></div></article>
-            <article><span class="language-icon">A</span><div><h3>English</h3><p>Technical documentation &amp; communication · Historical TOEIC 720</p></div></article>
-            <article><span class="language-icon">あ</span><div><h3>Japanese</h3><p>Basic conversation &amp; reading</p></div></article>
+            <article><span class="language-icon">中</span><div><h3>Chinese</h3><p>母語</p></div></article>
+            <article><span class="language-icon">A</span><div><h3>English</h3><p>可閱讀技術文件，並進行工作與技術溝通 · 歷史 TOEIC 720</p></div></article>
+            <article><span class="language-icon">あ</span><div><h3>Japanese</h3><p>基礎日常對話與閱讀，可理解部分日文操作文件</p></div></article>
           </div>
         </div>
         <div>
@@ -458,9 +469,8 @@
         <p class="eyebrow">PROFESSIONAL SUMMARY</p>
         <blockquote>From infrastructure to applications, from requirements to production.</blockquote>
         <p class="lead">
-          我的核心能力並不是單一程式語言或特定平台，而是能理解一個問題在
-          Business Process、Application、Data、Integration 與 Infrastructure 各層面的需求與限制，
-          並選擇適合組織規模、成本與維護方式的技術方案。
+          我的核心能力並不是單一程式語言或特定平台，而是能理解一個問題在 Business Process、Application、
+          Data、Integration 與 Infrastructure 各層面的需求與限制，並選擇適合組織規模、成本與維護方式的技術方案。
         </p>
         <p class="lead">
           過去的 IT Infrastructure 經驗讓我理解系統運作的基礎，Software Engineering 經驗讓我能親自實現設計，
