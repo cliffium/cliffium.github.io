@@ -282,6 +282,11 @@ const translations = {
   },
   ja: {
     "Domains":"領域","Skills":"スキル","Projects":"プロジェクト","Experience":"経歴","Evolution":"キャリア",
+    "CORE APPROACH":"コア・アプローチ",
+    "Requirement":"要件",
+    "Architecture":"アーキテクチャ",
+    "Implementation":"実装",
+    "Production":"本番運用",
     "從 Infrastructure、Software Engineering 到 Systems Analysis，累積超過 10 年企業 IT 與系統開發經驗。":"IT Infrastructure、Software Engineering、Systems Analysis を横断する10年以上の企業IT・システム開発経験があります。",
     "專注於將實際業務需求轉換為可落地、可維護、可持續演進的技術方案。":"実際の業務要件を、実装可能で保守しやすく、継続的に発展できる技術ソリューションへ変換することを得意としています。",
     "跨越需求、應用與平台的完整系統視角":"要件・アプリケーション・プラットフォームを横断するシステム視点",
@@ -405,8 +410,8 @@ function translateTextNodes(lang) {
     const node = walker.currentNode;
     const key = textNodeKeys.get(node);
     if (!key) continue;
-    const value = lang === "zh" ? key : translations[lang]?.[key];
-    if (value) node.nodeValue = value;
+    const value = lang === "zh" ? key : (translations[lang]?.[key] ?? key);
+    node.nodeValue = value;
   }
   requestAnimationFrame(() => document.body.classList.remove("language-updating"));
 }
