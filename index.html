@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cliff Lin — Solution Architect. Internal Systems, Software Engineering, Cloud & Platform." />
+  <title>Cliff Lin — Solution Architect</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="回到頁首">CL</a>
+      <nav class="site-nav" aria-label="主要導覽">
+        <a href="#domains">Domains</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#evolution">Evolution</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">SOLUTION ARCHITECT</p>
+          <h1>Cliff Lin</h1>
+          <p class="hero-role">Internal Systems · Software Engineering · Cloud & Platform</p>
+          <p class="hero-copy">
+            從 Infrastructure、Software Engineering 到 Systems Analysis，
+            累積超過 10 年企業 IT 與系統開發經驗。專注於將實際業務需求轉換為
+            可落地、可維護、可持續演進的技術方案。
+          </p>
+        </div>
+        <aside class="hero-principle" aria-label="Core approach">
+          <span class="principle-kicker">CORE APPROACH</span>
+          <div class="principle-flow">
+            <span>Requirement</span><i>→</i><span>Architecture</span><i>→</i><span>Implementation</span><i>→</i><span>Production</span>
+          </div>
+          <p>從問題本身出發，而不是從特定技術出發。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section profile-section">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="eyebrow">PROFILE</p>
+          <h2>跨越需求、應用與平台的完整系統視角</h2>
+        </div>
+        <p class="lead">
+          擅長從使用者與業務需求出發，釐清真正需要解決的問題，再將需求轉換為
+          workflow、data model、API、UI/UX、application architecture 與 deployment architecture。
+          除了系統分析與架構設計，也具備實際的軟體開發、系統整合、Cloud 與 Kubernetes
+          平台建置能力，能持續參與 solution 從需求、設計、實作到部署與維運的完整生命週期。
+        </p>
+        <p class="lead">
+          近年亦將 AI 納入實際工程流程：先建立 architecture、coding conventions、
+          shared modules 與 implementation constraints，再利用 AI 協助實作並進行 code structure
+          與 architecture review，讓 AI 成為工程流程中的執行工具，而不是取代系統設計與技術判斷。
+        </p>
+      </div>
+    </section>
+
+    <section id="domains" class="section section-tinted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">PROFESSIONAL DOMAINS</p>
+          <h2>我能處理什麼類型的問題</h2>
+          <p>點選任一領域，查看說明並同步高亮下方相關技能。</p>
+        </div>
+
+        <div class="domain-grid" role="group" aria-label="Professional domains">
+          <button class="domain-card" data-domain="solution" type="button">Solution Architecture</button>
+          <button class="domain-card" data-domain="analysis" type="button">Systems Analysis &amp; Process Design</button>
+          <button class="domain-card" data-domain="software" type="button">Software Engineering</button>
+          <button class="domain-card" data-domain="platform" type="button">Cloud &amp; Platform Engineering</button>
+          <button class="domain-card" data-domain="infra" type="button">IT Infrastructure</button>
+        </div>
+
+        <div id="domain-description" class="domain-description" aria-live="polite">
+          <span class="domain-description-label">SELECT A DOMAIN</span>
+          <p>點擊上方卡片後，這裡會顯示該領域的說明。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">TECHNICAL SKILLS</p>
+          <h2>把領域能力落實成可以使用的技術</h2>
+          <p class="legend">
+            <span><i class="legend-dot default"></i>Default</span>
+            <span><i class="legend-dot supporting"></i>Supporting</span>
+            <span><i class="legend-dot primary"></i>Primary</span>
+          </p>
+        </div>
+
+        <div class="skill-section">
+          <h3>Backend &amp; Application</h3>
+          <div class="skill-grid">
+            <article class="skill-card" data-skill="golang"><strong>Golang</strong><span>Gin · GORM</span></article>
+            <article class="skill-card" data-skill="csharp"><strong>C# / .NET</strong><span>MVC · WinForms · SignalR</span></article>
+            <article class="skill-card" data-skill="sql"><strong>SQL / RDBMS</strong><span>MS SQL · MariaDB · SAP HANA</span></article>
+            <article class="skill-card" data-skill="api"><strong>REST API / Integration</strong><span>System boundaries · data flow</span></article>
+            <article class="skill-card" data-skill="react"><strong>React / Next.js</strong><span>AI-assisted production delivery</span></article>
+            <article class="skill-card" data-skill="sap"><strong>SAP Business One</strong><span>Workflow · inventory · integration</span></article>
+          </div>
+        </div>
+
+        <div class="skill-section">
+          <h3>Cloud &amp; Platform</h3>
+          <div class="skill-grid">
+            <article class="skill-card" data-skill="k8s"><strong>Kubernetes</strong><span>3 control planes · 3 workers</span></article>
+            <article class="skill-card" data-skill="helm"><strong>Helm</strong><span>Reusable deployment patterns</span></article>
+            <article class="skill-card" data-skill="aws"><strong>AWS</strong><span>EC2 · S3 · MediaConvert · Amplify · CloudFront · Route53</span></article>
+            <article class="skill-card" data-skill="linux"><strong>Linux</strong><span>Server · runtime · Bash</span></article>
+            <article class="skill-card" data-skill="hyperv"><strong>Hyper-V</strong><span>Virtualization platform</span></article>
+            <article class="skill-card" data-skill="network"><strong>Networking &amp; Infrastructure</strong><span>HAProxy · Ingress · DNS · routing</span></article>
+          </div>
+        </div>
+
+        <div class="skill-section">
+          <h3>Security &amp; Integration</h3>
+          <div class="skill-grid">
+            <article class="skill-card" data-skill="auth"><strong>OAuth2 / JWT / SSO</strong><span>Azure AD · token flow</span></article>
+            <article class="skill-card" data-skill="casbin"><strong>Casbin</strong><span>Authorization foundation</span></article>
+          </div>
+        </div>
+
+        <div class="skill-section">
+          <h3>Engineering</h3>
+          <div class="skill-grid">
+            <article class="skill-card" data-skill="git"><strong>Git</strong><span>Version control · team workflow</span></article>
+            <article class="skill-card" data-skill="ai"><strong>AI-assisted Engineering</strong><span>Architecture-guided implementation</span></article>
+          </div>
+          <p class="supporting-line">
+            Supporting technologies: JavaScript · jQuery · CSS · SCSS · Bootstrap · Windows Server · VMware · Veeam · Jenkins · SonarQube · Swagger/OpenAPI · Joget
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-tinted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">SELECTED PROJECTS</p>
+          <h2>用實際系統展示問題如何被轉換成 Solution</h2>
+        </div>
+
+        <div class="project-stack">
+          <article class="project-card">
+            <div class="project-visual workflow-visual" aria-hidden="true">
+              <div class="ui-shell">
+                <div class="ui-top"></div>
+                <div class="ui-columns">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="ui-chart"></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-type">PROFESSIONAL PROJECT</p>
+              <h3>Internal Workflow System</h3>
+              <p>以 React / Next.js 建立的內部 Web System，整合使用者權限、SAP 表單申請、庫存查詢與視覺化，以及簽核流程。</p>
+              <div class="impact-list">
+                <span>Solution ownership</span><span>SAP workflow automation</span><span>AI-assisted frontend</span>
+              </div>
+              <div class="tag-row"><span>React</span><span>Golang</span><span>SAP B1</span><span>Kubernetes</span></div>
+              <div class="project-actions">
+                <button class="btn btn-disabled" type="button" disabled>Demo 準備中</button>
+                <button class="btn btn-text toggle-detail" type="button" data-target="project-workflow">View Details ↓</button>
+              </div>
+              <div id="project-workflow" class="expandable">
+                <div class="detail-grid">
+                  <div><h4>Role &amp; Ownership</h4><p>負責需求分析與 solution design，自主規劃 workflow、DB schema、API、UI/UX、technology stack 與 deployment architecture。</p></div>
+                  <div><h4>Representative Impact</h4><p>將部分多步驟 SAP 操作簡化為一次送單後由後端自動完成；每日人工報表改為夜間自動產生並寄送。</p></div>
+                  <div><h4>UX Decision</h4><p>將原本以數量與表格為主的庫存資訊重新設計為包含 heatmap 的視覺化介面，降低資訊判讀成本。</p></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reverse">
+            <div class="project-visual mes-visual" aria-hidden="true">
+              <div class="factory-grid">
+                <span class="machine m1"></span><span class="machine m2"></span><span class="machine m3"></span>
+                <span class="flow f1"></span><span class="flow f2"></span>
+                <span class="database"></span>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-type">PROFESSIONAL PROJECT</p>
+              <h3>Manufacturing MES / Shopfloor System</h3>
+              <p>將製造現場的生產流程、測試資料、生產履歷與工單資訊系統化整合，並定義跨工具共用的資料介面。</p>
+              <div class="impact-list">
+                <span>Manufacturing analysis</span><span>Unified API</span><span>Production history</span>
+              </div>
+              <div class="tag-row"><span>REST API</span><span>SQL</span><span>C# / .NET</span><span>Joget</span></div>
+              <div class="project-actions">
+                <button class="btn btn-disabled" type="button" disabled>Demo 準備中</button>
+                <button class="btn btn-text toggle-detail" type="button" data-target="project-mes">View Details ↓</button>
+              </div>
+              <div id="project-mes" class="expandable">
+                <div class="detail-grid">
+                  <div><h4>Collaboration</h4><p>與 Software RD、Hardware RD 與產線人員溝通，分析現場 workflow，定義資料交換方式與系統流程。</p></div>
+                  <div><h4>Integration</h4><p>定義統一 REST API，使不同部門、不同程式語言開發的測試工具能以一致方式上傳測試資料。</p></div>
+                  <div><h4>Operations</h4><p>建立工時統計、測試資料檢查、工單狀態、報表、生產履歷與物料使用資訊。</p></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual aws-visual" aria-hidden="true">
+              <div class="cloud-flow">
+                <span>Video</span><i>→</i><span>MediaConvert</span><i>→</i><span>S3</span><i>→</i><span>CloudFront</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-type">PROFESSIONAL PROJECT</p>
+              <h3>AWS Multimedia Streaming Platform</h3>
+              <p>依業務展示需求建立可持續維護的多媒體平台，將內容更新流程與 application code 解耦。</p>
+              <div class="impact-list">
+                <span>Cloud architecture</span><span>Streaming pipeline</span><span>Maintainable content model</span>
+              </div>
+              <div class="tag-row"><span>MediaConvert</span><span>S3</span><span>Amplify</span><span>CloudFront</span><span>Route53</span></div>
+              <div class="project-actions">
+                <button class="btn btn-text toggle-detail" type="button" data-target="project-aws">View Details ↓</button>
+              </div>
+              <div id="project-aws" class="expandable">
+                <div class="detail-grid">
+                  <div><h4>Architecture</h4><p>Source Video → MediaConvert → Streaming Format → S3 → CloudFront / Amplify → Corporate Domain。</p></div>
+                  <div><h4>Key Decision</h4><p>影片排列與內容由 S3 上的 JSON 定義，新增影片時依 SOP 更新媒體與 metadata，不需要修改 application。</p></div>
+                  <div><h4>Cloud Optimization</h4><p>另將公司官方網站由 EC2 遷移至 Amplify，在符合既有需求的前提下降低約 60% 雲端費用。</p></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reverse">
+            <div class="project-visual travel-visual" aria-hidden="true">
+              <div class="travel-board">
+                <span class="day-pill">DAY 03</span>
+                <div class="route-line"></div>
+                <span class="stop s1"></span><span class="stop s2"></span><span class="stop s3"></span>
+                <div class="travel-card"></div>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-type personal">PERSONAL PROJECT</p>
+              <h3>Travel Planning Web Application</h3>
+              <p>把真實旅行中的模糊需求，透過 Systems Analysis、Information Architecture、UI/UX 與 AI-assisted Engineering 轉換為實際可使用的行程 Web App。</p>
+              <div class="impact-list">
+                <span>Real-world requirement</span><span>Mobile-first UX</span><span>AI-assisted delivery</span>
+              </div>
+              <div class="tag-row"><span>Information Architecture</span><span>UX</span><span>AI Collaboration</span></div>
+              <div class="project-actions">
+                <button class="btn btn-disabled" type="button" disabled>Demo 準備中</button>
+                <button class="btn btn-text toggle-detail" type="button" data-target="project-travel">View Details ↓</button>
+              </div>
+              <div id="project-travel" class="expandable">
+                <div class="detail-grid">
+                  <div><h4>Purpose</h4><p>驗證能否把生活中的真實問題，透過 SA 思維整理成系統，而不是單純製作技術 Demo。</p></div>
+                  <div><h4>Design Focus</h4><p>以旅途中快速掃讀為核心，整理每日行程、交通、餐廳、景點、注意事項與低頻資訊。</p></div>
+                  <div><h4>Process</h4><p>Requirement → Information Architecture → UX / Workflow → AI-assisted Implementation → Actual Usage。</p></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual subtitle-visual" aria-hidden="true">
+              <div class="waveform">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+              </div>
+              <div class="subtitle-lines"><span>日本語 ASR</span><span>繁體中文 Translation</span></div>
+            </div>
+            <div class="project-content">
+              <p class="project-type research">PERSONAL R&amp;D · IN PROGRESS</p>
+              <h3>VTuber Automatic Subtitle &amp; Translation System</h3>
+              <p>研究將長時間日文 VTuber 影片自動轉換為日文／繁中雙語字幕的 AI pipeline，重點放在可重現評估與架構取捨。</p>
+              <div class="impact-list">
+                <span>ASR evaluation</span><span>Cross-video validation</span><span>Model trade-offs</span>
+              </div>
+              <div class="tag-row"><span>Python</span><span>Whisper</span><span>Local LLM</span><span>CUDA</span></div>
+              <div class="project-actions">
+                <button class="btn btn-text toggle-detail" type="button" data-target="project-vtuber">Research Details ↓</button>
+              </div>
+              <div id="project-vtuber" class="expandable">
+                <div class="detail-grid">
+                  <div><h4>Pipeline</h4><p>YouTube Audio → Japanese ASR → Context Enrichment → Correction Research → Translation → Bilingual Subtitle。</p></div>
+                  <div><h4>Evaluation</h4><p>使用 CER / WER、固定測試資料與第二支影片進行 cross-video validation，避免只對單一素材調參。</p></div>
+                  <div><h4>Engineering Principle</h4><p>若額外 AI correction stage 無法證明穩定淨改善，且可能破壞原本正確字幕，優先移除而非為了架構完整度保留。</p></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">PROFESSIONAL EXPERIENCE</p>
+          <h2>從維運、開發、分析到完整 Solution Ownership</h2>
+          <p>先看摘要；需要時再展開細節。</p>
+        </div>
+
+        <div class="experience-list">
+          <article class="experience-card">
+            <div class="experience-head">
+              <div><p class="exp-period">2020.03 — Present</p><h3>全智通機器人股份有限公司</h3><p>System Analyst</p></div>
+              <span class="role-evolution">Role evolution since 2024.10 · Solution Architecture</span>
+            </div>
+            <ul class="summary-bullets">
+              <li>從需求到 deployment，自主規劃內部 solution 的 workflow、data、API、UI/UX 與技術架構。</li>
+              <li>建立內部流程系統與共用 Golang services，涵蓋 SAP、權限、報表、排程與系統整合。</li>
+              <li>從零建置 6-node Kubernetes application platform，統一內部應用程式的部署環境。</li>
+              <li>導入 architecture-guided AI-assisted engineering workflow，並部署 DeepWiki 進行企業 AI 應用驗證。</li>
+            </ul>
+            <button class="detail-button toggle-detail" type="button" data-target="exp-aeolus">Details ↓</button>
+            <div id="exp-aeolus" class="expandable">
+              <div class="experience-detail">
+                <h4>2024.10 — Present · Solution Architecture &amp; Internal Systems Development</h4>
+                <ul>
+                  <li>內部流程系統目前服務約 20 名使用者，涵蓋約 4–5 個部門，包含權限管理、SAP 表單、庫存視覺化與簽核流程。</li>
+                  <li>以 Golang 建立 Casbin 權限、JWT/API 驗證、SAP / Shopfloor integration、ETL、排程報表與通知服務。</li>
+                  <li>將部分多步 SAP 操作改為一次送單後由後端完成；人工日報改為夜間自動產生並寄送。</li>
+                  <li>將 DeepWiki 部署至 Kubernetes，透過 OpenRouter 比較 LLM 輸出並調整 prompt。</li>
+                  <li>設計 AWS 多媒體展示平台，並將官網由 EC2 遷移至 Amplify，降低約 60% 雲端費用。</li>
+                </ul>
+
+                <div class="architecture-highlight">
+                  <div class="architecture-copy">
+                    <p class="project-type">ARCHITECTURE HIGHLIGHT</p>
+                    <h4>Kubernetes Internal Application Platform</h4>
+                    <p>在既有 Hyper-V 環境上建立一致的 application runtime，使用 Helm 管理 deployment pattern，並設計 probes 與 node replacement procedure。</p>
+                    <div class="tag-row"><span>Helm</span><span>Ingress</span><span>HAProxy</span><span>Veeam</span></div>
+                  </div>
+                  <div class="k8s-diagram" role="img" aria-label="Kubernetes architecture diagram">
+                    <div class="arch-node top">HAProxy</div>
+                    <div class="arch-line vertical"></div>
+                    <div class="arch-node ingress">Ingress</div>
+                    <div class="arch-line vertical second"></div>
+                    <div class="arch-cluster">
+                      <div><span>Control Plane</span><strong>× 3</strong></div>
+                      <div><span>Worker Node</span><strong>× 3</strong></div>
+                    </div>
+                    <div class="arch-base">Hyper-V</div>
+                  </div>
+                </div>
+
+                <h4>2020.03 — 2024.09 · Systems Analysis &amp; Manufacturing Systems</h4>
+                <ul>
+                  <li>與 Software RD、Hardware RD、產線與使用部門訪談，將實際作業需求轉換為 workflow、data specification 與 application design。</li>
+                  <li>持續改善 Shopfloor / MES，包含生產流程、工時統計、測試資料檢查、工單狀態與報表。</li>
+                  <li>定義統一資料上傳 API 與文件，並協助海外工程師導入。</li>
+                  <li>執行 Order System PoC，負責訂單、產能、出貨與 SKU 整合流程設計。</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-card compact">
+            <div class="experience-head">
+              <div><p class="exp-period">2019.12 — 2020.02</p><h3>自由職業者</h3><p>Freelance Software Engineer</p></div>
+            </div>
+            <p class="experience-one-line">直接與製造業客戶訪談，從現場 workflow、UI 設計一路完成應用程式開發，建立 end-to-end delivery 經驗。</p>
+          </article>
+
+          <article class="experience-card compact">
+            <div class="experience-head">
+              <div><p class="exp-period">2019.06 — 2019.11</p><h3>綠界科技股份有限公司</h3><p>Software Engineer</p></div>
+            </div>
+            <p class="experience-one-line">維護財政部電子發票 integration API、產品 SDK 與會員後台，並撰寫新專案程式架構文件。</p>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-head">
+              <div><p class="exp-period">2015.04 — 2019.06</p><h3>網訊電通股份有限公司</h3><p>MIS Engineer → Software Engineer</p></div>
+              <span class="role-evolution">Career transition · Infrastructure → Software</span>
+            </div>
+            <ul class="summary-bullets">
+              <li>由企業 MIS 工作中的自動化與工具開發，自然轉任專職 Software Engineer。</li>
+              <li>使用 C# / .NET MVC、REST API、SQL 與 JavaScript / jQuery 開發內部及客戶系統。</li>
+              <li>早期負責超過 2,000 台 PC、30+ servers 與 4 個跨國分公司的 IT 環境。</li>
+            </ul>
+            <button class="detail-button toggle-detail" type="button" data-target="exp-tms">Details ↓</button>
+            <div id="exp-tms" class="expandable">
+              <div class="experience-detail">
+                <h4>2017.02 — 2019.06 · Software Engineer</h4>
+                <ul>
+                  <li>從零規劃員工權限紀錄系統，並與既有權限申請流程整合。</li>
+                  <li>參與外部活動網站與媽媽教室平台，負責前後端流程、付款狀態控制與每日訂單對帳。</li>
+                  <li>以非同步讀取與單頁式操作改善既有客服系統效能與 UX。</li>
+                </ul>
+                <h4>2015.04 — 2017.02 · MIS Engineer</h4>
+                <ul>
+                  <li>維運 2,000+ 使用者 PC、30+ servers 與 4 個跨國分公司的企業網路。</li>
+                  <li>以 Batch、Bash 與自行開發的 C# WinForms 工具改善維運，並以 SignalR 建立端點與管理端雙向溝通。</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="evolution" class="section section-tinted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">CAREER EVOLUTION</p>
+          <h2>能力不是切換，而是一路累積</h2>
+        </div>
+        <div class="timeline">
+          <article><span class="timeline-year">2015</span><i></i><h3>IT Infrastructure</h3><p>MIS Engineer</p></article>
+          <article><span class="timeline-year">2017</span><i></i><h3>Software Engineering</h3><p>Software Engineer</p></article>
+          <article><span class="timeline-year">2020</span><i></i><h3>Systems Analysis</h3><p>Manufacturing &amp; Enterprise Systems</p></article>
+          <article><span class="timeline-year">2024.10</span><i></i><h3>Solution Architecture</h3><p>Internal Systems · Platform · AI</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-column-info">
+        <div>
+          <div class="section-heading small">
+            <p class="eyebrow">LANGUAGE</p>
+            <h2>Language</h2>
+          </div>
+          <div class="language-list">
+            <article><span class="language-icon">中</span><div><h3>Chinese</h3><p>Native</p></div></article>
+            <article><span class="language-icon">A</span><div><h3>English</h3><p>Technical documentation &amp; communication · Historical TOEIC 720</p></div></article>
+            <article><span class="language-icon">あ</span><div><h3>Japanese</h3><p>Basic conversation &amp; reading</p></div></article>
+          </div>
+        </div>
+        <div>
+          <div class="section-heading small">
+            <p class="eyebrow">EDUCATION</p>
+            <h2>Education</h2>
+          </div>
+          <div class="education-card">
+            <span class="education-year">2008 — 2013</span>
+            <h3>元智大學 Yuan Ze University</h3>
+            <p>Bachelor of Science in Computer Science / 資訊工程學士</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section closing-section">
+      <div class="container narrow">
+        <p class="eyebrow">PROFESSIONAL SUMMARY</p>
+        <blockquote>From infrastructure to applications, from requirements to production.</blockquote>
+        <p class="lead">
+          我的核心能力並不是單一程式語言或特定平台，而是能理解一個問題在
+          Business Process、Application、Data、Integration 與 Infrastructure 各層面的需求與限制，
+          並選擇適合組織規模、成本與維護方式的技術方案。
+        </p>
+        <p class="lead">
+          過去的 IT Infrastructure 經驗讓我理解系統運作的基礎，Software Engineering 經驗讓我能親自實現設計，
+          Systems Analysis 經驗讓我能將使用者需求轉換為清楚流程，而目前的工作則將這些能力整合成完整的 Solution Architecture。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><span>Cliff Lin · Solution Architect</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
