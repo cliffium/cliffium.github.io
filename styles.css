@@ -4,7 +4,7 @@
   --surface-strong:#ffffff;
   --surface-muted:#f1f4f8;
   --text:#182231;
-  --muted:#566274;
+  --muted:#555;
   --border:#d7dde6;
   --border-strong:#c5ceda;
   --blue-50:#edf5ff;
@@ -292,7 +292,7 @@ h1{font-size:clamp(54px,7.5vw,84px);line-height:.98;letter-spacing:-.055em;margi
   --surface-strong:#ffffff;
   --surface-muted:#e9edf3;
   --text:#1c2533;
-  --muted:#647083;
+  --muted:#555;
   --border:#d8dee7;
   --border-strong:#c6cfdb;
   --blue-50:#eef5fd;
@@ -453,7 +453,7 @@ body{
   max-height:160px;
   opacity:1;
   margin-top:16px;
-  transform:translateX(0);
+  transform:none;
 }
 .domain-description,
 .domain-description-wrap.open .domain-description{
@@ -462,7 +462,7 @@ body{
   border-left:3px solid var(--blue-500);
   border-radius:0;
   padding:5px 0 5px 18px;
-  color:#625d68;
+  color:#555;
 }
 .domain-description.animate{animation:none}
 .domain-description strong{color:#403b51}
@@ -629,12 +629,12 @@ body{
 .experience-card,
 .btn,
 .detail-button{
-  will-change:transform,opacity,background-color,border-color,box-shadow;
+  will-change:auto;
 }
 
 .domain-card.active,
 .domain-card.state-primary{
-  transform:translateY(-3px) scale(1.012);
+  transform:translateY(-2px);
 }
 
 .skill-card.selected,
@@ -649,11 +649,11 @@ body{
 
 .domain-card.state-disabled,
 .skill-card.state-disabled{
-  transform:scale(.985);
+  transform:none;
 }
 
 .domain-description-wrap{
-  will-change:max-height,opacity,transform;
+  will-change:auto;
 }
 
 .timeline:before,
