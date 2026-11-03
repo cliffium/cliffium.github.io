@@ -1088,3 +1088,17 @@ main,footer{
   letter-spacing:.04em;
   text-transform:uppercase;
 }
+
+
+/* v5.3 — inline email icon aligned to text */
+.hero-contact-link{
+  flex-wrap:nowrap;
+}
+.hero-contact-link .hero-contact-icon{
+  width:1em;
+  height:1em;
+  flex:0 0 1em;
+  fill:none !important;
+  stroke:currentColor;
+  display:block;
+}
