@@ -1075,3 +1075,16 @@ main,footer{
     padding:8px 11px;
   }
 }
+
+
+/* v5.2 — robust mobile email contact */
+.hero-contact-link{
+  flex-wrap:wrap;
+}
+.hero-contact-label{
+  color:var(--blue-700);
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
