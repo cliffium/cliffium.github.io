@@ -1102,3 +1102,17 @@ main,footer{
   stroke:currentColor;
   display:block;
 }
+
+
+/* v5.4 — prevent mobile reveal animations from creating horizontal overflow */
+@media(max-width:960px){
+  .reveal-on-scroll.reveal-left,
+  .reveal-on-scroll.reveal-right{
+    transform:translateY(28px);
+  }
+
+  .reveal-on-scroll.reveal-left.is-revealed,
+  .reveal-on-scroll.reveal-right.is-revealed{
+    transform:none;
+  }
+}
