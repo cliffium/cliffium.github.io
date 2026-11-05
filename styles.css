@@ -128,6 +128,7 @@ h1{font-size:clamp(54px,7.5vw,84px);line-height:.98;letter-spacing:-.055em;margi
 .domain-description p{margin:0}
 @keyframes domainIn{from{opacity:.1;transform:translateY(5px)}to{opacity:1;transform:none}}
 .skills-section{padding-top:34px;background:var(--surface-strong)}
+#skills{scroll-margin-top:40px}
 .skills-title-row{display:flex;align-items:end;justify-content:space-between;gap:24px}
 .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:16px;margin:0;color:var(--muted)}
 .legend span{display:flex;align-items:center;gap:7px}
