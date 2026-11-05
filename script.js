@@ -278,7 +278,7 @@ const translations = {
     "綠界科技股份有限公司":"ECPay",
     "網訊電通股份有限公司":"Telexpress",
     "自由職業者":"Freelance",
-    "View Details":"View Details","Research Details":"Research Details","View Demo ↗":"View Demo ↗","Back to top ↑":"Back to top ↑",
+    "View Details":"View Details","Research Details":"Research Details","View Demo ↗":"View Demo ↗","Demo on Request":"Demo on Request","此 Demo 因存取控制與獨立運行環境需求，平時不對外常駐開放；可於需要時提供展示。":"This demo is kept offline by default due to access-control requirements and dedicated hosting resources. Available for demonstration on request.","Back to top ↑":"Back to top ↑",
     "Language":"Language","Education":"Education"
   },
   ja: {
@@ -379,7 +379,7 @@ const translations = {
     "Manufacturing & Enterprise Systems":"製造・企業システム",
     "Internal Systems · Platform · AI":"社内システム · Platform · AI",
     "PROFESSIONAL SUMMARY":"PROFESSIONAL SUMMARY",
-    "View Details":"詳細を見る","Research Details":"研究詳細","View Demo ↗":"Demoを見る ↗","Back to top ↑":"トップへ ↑",
+    "View Details":"詳細を見る","Research Details":"研究詳細","View Demo ↗":"Demoを見る ↗","Demo on Request":"デモはお問い合わせください","此 Demo 因存取控制與獨立運行環境需求，平時不對外常駐開放；可於需要時提供展示。":"アクセス管理および専用実行環境の都合により、デモ環境は通常非公開としています。必要に応じてデモをご案内できます。","Back to top ↑":"トップへ ↑",
     "Language":"言語","Education":"学歴","回到頁首":"トップへ","主要導覽":"メインナビゲーション"
   }
 };
