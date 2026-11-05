@@ -48,6 +48,12 @@ a{color:inherit}
   box-shadow:0 4px 14px rgba(23,39,61,.05);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
 }
 .brand:hover{transform:translateY(-1px);box-shadow:var(--shadow);border-color:var(--blue-200)}
+.brand img{
+  width:30px;
+  height:30px;
+  display:block;
+  object-fit:contain;
+}
 .site-nav{display:flex;gap:24px}
 .site-nav a{font-size:16px;color:var(--muted);text-decoration:none;font-weight:650;transition:color .18s ease}
 .site-nav a:hover{color:var(--blue-700)}
