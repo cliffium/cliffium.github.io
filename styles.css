@@ -1208,35 +1208,32 @@ main,footer{
 .skill-card{
   position:relative;
   overflow:hidden;
-  background:
-    linear-gradient(110deg,var(--skill-heat-soft,rgba(79,130,170,.12)) 0%,rgba(255,255,255,.82) 48%,rgba(255,255,255,.96) 100%);
+  padding-left:18px;
+  background:transparent;
   border-color:color-mix(in srgb,var(--skill-heat,#4f82aa) 42%,var(--border));
-  box-shadow:inset 4px 0 0 var(--skill-heat,#4f82aa);
+  box-shadow:none;
 }
 .skill-card::after{
   content:"";
   position:absolute;
-  top:0;
-  right:0;
-  width:30px;
-  height:3px;
-  border-radius:0 12px 0 999px;
+  inset:0 auto 0 0;
+  width:14px;
+  height:auto;
+  border-radius:11px 0 0 11px;
   background:var(--skill-heat,#4f82aa);
-  opacity:.9;
+  opacity:1;
 }
 .skill-card:hover{
-  background:
-    linear-gradient(110deg,var(--skill-heat-soft,rgba(79,130,170,.12)) 0%,#fff 52%,#fff 100%);
+  background:transparent;
   border-color:var(--skill-heat,#4f82aa);
 }
 .skill-card.state-related,
 .skill-card.selected{
   opacity:1;
   transform:translateY(-3px);
+  background:transparent;
   border-color:var(--skill-heat,#4f82aa);
-  box-shadow:
-    inset 4px 0 0 var(--skill-heat,#4f82aa),
-    0 12px 24px rgba(47,99,159,.13);
+  box-shadow:0 12px 24px rgba(47,99,159,.13);
 }
 .skill-card.state-related strong,
 .skill-card.selected strong{
@@ -1246,7 +1243,7 @@ main,footer{
   opacity:.20;
   transform:none;
   filter:saturate(.32);
-  background:#edf0f4;
+  background:transparent;
   border-color:var(--border);
   box-shadow:none;
 }
