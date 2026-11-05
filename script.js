@@ -474,3 +474,36 @@ document.querySelectorAll(".lang-button").forEach(button => {
 
 const savedLanguage = localStorage.getItem("resume-language");
 applyLanguage(savedLanguage || "zh", false);
+
+
+// v6 — scroll-responsive header brand
+const headerBrand = document.querySelector(".brand");
+if (headerBrand) {
+  const BRAND_MAX = 85;
+  const BRAND_MIN = 50;
+  const OFFSET_MAX = 15;
+  const SCROLL_START = 16;
+  const SCROLL_END = 180;
+  let brandFrame = 0;
+
+  const updateHeaderBrand = () => {
+    brandFrame = 0;
+    const progress = Math.min(
+      1,
+      Math.max(0, (window.scrollY - SCROLL_START) / (SCROLL_END - SCROLL_START))
+    );
+    const size = BRAND_MAX - (BRAND_MAX - BRAND_MIN) * progress;
+    const offset = OFFSET_MAX * (1 - progress);
+
+    headerBrand.style.setProperty("--brand-size", `${size.toFixed(2)}px`);
+    headerBrand.style.setProperty("--brand-offset", `${offset.toFixed(2)}px`);
+  };
+
+  const requestBrandUpdate = () => {
+    if (brandFrame) return;
+    brandFrame = window.requestAnimationFrame(updateHeaderBrand);
+  };
+
+  updateHeaderBrand();
+  window.addEventListener("scroll", requestBrandUpdate, { passive: true });
+}
