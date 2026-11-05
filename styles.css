@@ -1256,3 +1256,5 @@ main,footer{
 .domain-card.state-related{
   background:linear-gradient(143deg,var(--skill-heat-soft,rgba(79,130,170,.12)) 0%,rgba(255,255,255,.82) 48%,rgba(255,255,255,.96) 100%);
 }
+
+/* pages deployment retrigger: 2026-11-06 */
