@@ -52,11 +52,11 @@ let activeDomain = null;
 let activeSkill = null;
 
 function clearDomainStates() {
-  domainButtons.forEach(btn => btn.classList.remove("active","state-disabled","state-supporting","state-primary"));
+  domainButtons.forEach(btn => btn.classList.remove("active","state-related","state-disabled","state-supporting","state-primary"));
 }
 
 function clearSkillStates() {
-  skillCards.forEach(card => card.classList.remove("selected","state-disabled","state-supporting","state-primary"));
+  skillCards.forEach(card => card.classList.remove("selected","state-related","state-disabled","state-supporting","state-primary"));
 }
 
 function closeDescription() {
@@ -86,8 +86,8 @@ function renderDomain(domain) {
   activeDomain = domain;
   domainButtons.forEach(btn => btn.classList.toggle("active", btn.dataset.domain === domain));
   skillCards.forEach(card => {
-    const state = mapping[domain][card.dataset.skill];
-    card.classList.add(state === "primary" ? "state-primary" : state === "supporting" ? "state-supporting" : "state-disabled");
+    const related = Boolean(mapping[domain][card.dataset.skill]);
+    card.classList.add(related ? "state-related" : "state-disabled");
   });
   openDescription(domain);
 }
@@ -108,8 +108,8 @@ function renderSkill(skill) {
   if (selected) selected.classList.add("selected");
 
   domainButtons.forEach(btn => {
-    const state = mapping[btn.dataset.domain][skill];
-    btn.classList.add(state === "primary" ? "state-primary" : state === "supporting" ? "state-supporting" : "state-disabled");
+    const related = Boolean(mapping[btn.dataset.domain][skill]);
+    btn.classList.add(related ? "state-related" : "state-disabled");
   });
 }
 
