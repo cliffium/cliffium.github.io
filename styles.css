@@ -59,7 +59,16 @@ a{color:inherit}
   box-shadow:none;
   line-height:0;
   cursor:pointer;
-  will-change:width,height,top;
+  will-change:width,height,top,flex-basis;
+  transition:
+    width .22s cubic-bezier(.22,.61,.36,1),
+    height .22s cubic-bezier(.22,.61,.36,1),
+    flex-basis .22s cubic-bezier(.22,.61,.36,1),
+    top .22s cubic-bezier(.22,.61,.36,1);
+}
+.brand.is-compact{
+  --brand-size:50px;
+  --brand-offset:0px;
 }
 .brand:hover{
   border-color:transparent;
