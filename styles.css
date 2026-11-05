@@ -1116,3 +1116,36 @@ main,footer{
     transform:none;
   }
 }
+
+
+/* v5.5 — MES demo availability state */
+.btn-demo-disabled:disabled{
+  opacity:1;
+  gap:7px;
+  background:#f1f4f7;
+  color:#7a8796;
+  border-color:#dce3ea;
+  cursor:default;
+  box-shadow:none;
+}
+.btn-demo-disabled:disabled:hover{
+  transform:none;
+  background:#f1f4f7;
+  color:#7a8796;
+  border-color:#dce3ea;
+}
+.demo-lock-icon{
+  width:1em;
+  height:1em;
+  flex:0 0 1em;
+  display:block;
+  fill:none !important;
+  stroke:currentColor;
+}
+.project-content > p.demo-availability-note{
+  margin-top:9px;
+  max-width:560px;
+  color:#7b8795;
+  font-size:13px;
+  line-height:1.55;
+}
