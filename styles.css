@@ -84,7 +84,7 @@ a{color:inherit}
 .site-nav{display:flex;gap:24px}
 .site-nav a{font-size:16px;color:var(--muted);text-decoration:none;font-weight:650;transition:color .18s ease}
 .site-nav a:hover{color:var(--blue-700)}
-.hero{padding-top:92px;padding-bottom:72px;background:linear-gradient(180deg,#f7f8fa 0%,#eef1f5 100%)}
+.hero{padding-top:74px;padding-bottom:58px;background:linear-gradient(180deg,#f7f8fa 0%,#eef1f5 100%)}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(300px,.8fr);gap:54px;align-items:end}
 .eyebrow{margin:0 0 10px;color:var(--blue-700);font-size:16px;font-weight:800;letter-spacing:.12em}
 h1{font-size:clamp(54px,7.5vw,84px);line-height:.98;letter-spacing:-.055em;margin:0 0 18px}
@@ -305,7 +305,7 @@ section[id]{scroll-margin-top:10px}
   .section{padding:52px 0}
   .mapping-section{padding-bottom:28px}
   .skills-section{padding-top:28px}
-  .hero{padding-top:72px}
+  .hero{padding-top:58px;padding-bottom:42px}
   h1{font-size:54px}
   .domain-grid{grid-template-columns:1fr}
   .domain-card:last-child{grid-column:auto}
@@ -718,7 +718,7 @@ body{
 .hero-copy-wrap{align-self:center}
 .hero-photo-wrap{
   position:relative;
-  width:min(100%,420px);
+  width:min(100%,336px);
   aspect-ratio:4/5;
   justify-self:start;
   isolation:isolate;
@@ -924,7 +924,7 @@ body{
     grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);
     gap:38px;
   }
-  .hero-photo-wrap{width:min(100%,330px)}
+  .hero-photo-wrap{width:min(100%,264px)}
   .profile-grid{
     width:min(var(--max),calc(100% - 48px));
     grid-template-columns:1fr;
@@ -940,7 +940,7 @@ body{
 @media(max-width:720px){
   .hero-grid{grid-template-columns:1fr;gap:34px}
   .hero-photo-wrap{
-    width:min(78vw,340px);
+    width:min(62.4vw,272px);
     justify-self:center;
   }
   .hero-copy-wrap{text-align:left}
@@ -958,7 +958,7 @@ body{
 }
 
 @media(max-width:430px){
-  .hero-photo-wrap{width:min(84vw,310px)}
+  .hero-photo-wrap{width:min(67.2vw,248px)}
   .skill-card{
     grid-template-columns:34px minmax(0,1fr);
   }
@@ -989,25 +989,13 @@ body{
 .aws-logo text{fill:currentColor}
 
 /* These source images contain more internal whitespace than the ECPay asset. */
-.company-logo-aeolus{
-  height:44px;
-  max-width:180px;
-  transform:scale(1.28);
-  transform-origin:right center;
-}
+.company-logo-aeolus,
 .company-logo-telexpress{
-  height:42px;
-  max-width:180px;
-  transform:scale(1.24);
-  transform-origin:right center;
+  height:34px;
+  max-width:140px;
+  transform:none;
 }
 
-@media(max-width:720px){
-  .company-logo-aeolus,
-  .company-logo-telexpress{
-    transform-origin:left center;
-  }
-}
 
 
 /* v5 — language switcher */
