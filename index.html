@@ -15,6 +15,8 @@
         <nav class="site-nav" aria-label="主要導覽">
           <a href="#domains">Domains</a>
           <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#evolution">Evolution</a>
         </nav>
         <div class="language-switcher" role="group" aria-label="Language">
           <button type="button" class="lang-button active" data-lang="zh" aria-pressed="true">中</button>
@@ -139,6 +141,135 @@
               </div>
             </article>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">PROFESSIONAL EXPERIENCE</p>
+          <h2>從維運、開發、分析到完整 Solution Ownership</h2>
+        </div>
+
+        <div class="experience-list">
+          <article class="experience-card">
+            <div class="experience-head">
+              <div><p class="exp-period">2020.03 — Present</p><h3>全智通機器人股份有限公司</h3><p>System Analyst</p></div>
+              <div class="experience-meta">
+                <img class="company-logo company-logo-aeolus" src="./assets/logo-aeolus.png" alt="Aeolus Robotics logo" loading="lazy" />
+                <span class="role-evolution">Role evolution since 2024.10 · Solution Architecture</span>
+              </div>
+            </div>
+            <ul class="summary-bullets">
+              <li>從需求到 deployment，自主規劃內部 solution 的 workflow、data、API、UI/UX 與技術架構。</li>
+              <li>建立內部流程系統與共用 Golang services，涵蓋 SAP、權限、報表、排程與系統整合。</li>
+              <li>從零建置 6-node Kubernetes application platform，統一內部應用程式的部署環境。</li>
+              <li>導入 architecture-guided AI-assisted engineering workflow，並部署 DeepWiki 進行企業 AI 應用驗證。</li>
+            </ul>
+            <button class="detail-button toggle-detail" type="button" data-target="exp-aeolus">Details ↓</button>
+            <div id="exp-aeolus" class="expandable">
+              <div class="experience-detail">
+                <h4>2024.10 — Present · Solution Architecture &amp; Internal Systems Development</h4>
+                <ul>
+                  <li>內部流程系統目前服務約 20 名使用者，涵蓋約 4–5 個部門，包含權限管理、SAP 表單、庫存視覺化與簽核流程。</li>
+                  <li>以 Golang 建立 Casbin 權限、JWT/API 驗證、SAP / Shopfloor integration、ETL、排程報表與通知服務。</li>
+                  <li>將部分多步 SAP 操作改為一次送單後由後端完成；人工日報改為夜間自動產生並寄送。</li>
+                  <li>將 DeepWiki 部署至 Kubernetes，透過 OpenRouter 比較 LLM 輸出並調整 prompt。</li>
+                  <li>設計 AWS 多媒體展示平台，並將官網由 EC2 遷移至 Amplify，降低約 60% 雲端費用。</li>
+                </ul>
+
+                <div class="architecture-highlight">
+                  <div class="architecture-copy">
+                    <p class="project-type">ARCHITECTURE HIGHLIGHT</p>
+                    <h4>Kubernetes Internal Application Platform</h4>
+                    <p>在既有 Hyper-V 環境上建立一致的 application runtime，使用 Helm 管理 deployment pattern，並設計 probes 與 node replacement procedure。</p>
+                    <div class="tag-row"><span>Helm</span><span>Ingress</span><span>HAProxy</span><span>Veeam</span></div>
+                  </div>
+                  <div class="k8s-diagram" role="img" aria-label="Kubernetes architecture diagram">
+                    <div class="arch-node top">HAProxy</div>
+                    <div class="arch-line vertical"></div>
+                    <div class="arch-node ingress">Ingress</div>
+                    <div class="arch-line vertical second"></div>
+                    <div class="arch-cluster">
+                      <div><span>Control Plane</span><strong>× 3</strong></div>
+                      <div><span>Worker Node</span><strong>× 3</strong></div>
+                    </div>
+                    <div class="arch-base">Hyper-V</div>
+                  </div>
+                </div>
+
+                <h4>2020.03 — 2024.09 · Systems Analysis &amp; Manufacturing Systems</h4>
+                <ul>
+                  <li>與 Software RD、Hardware RD、產線與使用部門訪談，將實際作業需求轉換為 workflow、data specification 與 application design。</li>
+                  <li>持續改善 Shopfloor / MES，包含生產流程、工時統計、測試資料檢查、工單狀態與報表。</li>
+                  <li>定義統一資料上傳 API 與文件，並協助海外工程師導入。</li>
+                  <li>執行 Order System PoC，負責訂單、產能、出貨與 SKU 整合流程設計。</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-card compact">
+            <div class="experience-head">
+              <div><p class="exp-period">2019.12 — 2020.02</p><h3>自由職業者</h3><p>Freelance Software Engineer</p></div>
+            </div>
+            <p class="experience-one-line">直接與製造業客戶訪談，從現場 workflow、UI 設計一路完成應用程式開發，建立 end-to-end delivery 經驗。</p>
+          </article>
+
+          <article class="experience-card compact">
+            <div class="experience-head">
+              <div><p class="exp-period">2019.06 — 2019.11</p><h3>綠界科技股份有限公司</h3><p>Software Engineer</p></div>
+              <img class="company-logo" src="./assets/logo-ecpay.png" alt="ECPay logo" loading="lazy" />
+            </div>
+            <p class="experience-one-line">維護財政部電子發票 integration API、產品 SDK 與會員後台，並撰寫新專案程式架構文件。</p>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-head">
+              <div><p class="exp-period">2015.04 — 2019.06</p><h3>網訊電通股份有限公司</h3><p>MIS Engineer → Software Engineer</p></div>
+              <div class="experience-meta">
+                <img class="company-logo company-logo-telexpress" src="./assets/logo-telexpress.png" alt="Telexpress logo" loading="lazy" />
+                <span class="role-evolution">Career transition · Infrastructure → Software</span>
+              </div>
+            </div>
+            <ul class="summary-bullets">
+              <li>由企業 MIS 工作中的自動化與工具開發，自然轉任專職 Software Engineer。</li>
+              <li>使用 C# / .NET MVC、REST API、SQL 與 JavaScript / jQuery 開發內部及客戶系統。</li>
+              <li>早期負責超過 2,000 台 PC、30+ servers 與 4 個跨國分公司的 IT 環境。</li>
+            </ul>
+            <button class="detail-button toggle-detail" type="button" data-target="exp-tms">Details ↓</button>
+            <div id="exp-tms" class="expandable">
+              <div class="experience-detail">
+                <h4>2017.02 — 2019.06 · Software Engineer</h4>
+                <ul>
+                  <li>從零規劃員工權限紀錄系統，並與既有權限申請流程整合。</li>
+                  <li>參與外部活動網站與媽媽教室平台，負責前後端流程、付款狀態控制與每日訂單對帳。</li>
+                  <li>以非同步讀取與單頁式操作改善既有客服系統效能與 UX。</li>
+                </ul>
+                <h4>2015.04 — 2017.02 · MIS Engineer</h4>
+                <ul>
+                  <li>維運 2,000+ 使用者 PC、30+ servers 與 4 個跨國分公司的企業網路。</li>
+                  <li>以 Batch、Bash 與自行開發的 C# WinForms 工具改善維運，並以 SignalR 建立端點與管理端雙向溝通。</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="evolution" class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">CAREER EVOLUTION</p>
+          <h2>能力不是切換，而是一路累積</h2>
+        </div>
+        <div class="timeline" id="career-timeline">
+          <article><span class="timeline-year">2015</span><i></i><h3>IT Infrastructure</h3><p>MIS Engineer</p></article>
+          <article><span class="timeline-year">2017</span><i></i><h3>Software Engineering</h3><p>Software Engineer</p></article>
+          <article><span class="timeline-year">2020</span><i></i><h3>Systems Analysis</h3><p>Manufacturing &amp; Enterprise Systems</p></article>
+          <article><span class="timeline-year">2024.10</span><i></i><h3>Solution Architecture</h3><p>Internal Systems · Platform · AI</p></article>
         </div>
       </div>
     </section>
